@@ -13,11 +13,8 @@ module Belugas
         self
       end
 
-      def to_json(*a)
-        {
-          name: name,
-          version: version
-        }.to_json(*a)
+      def categories
+        StandardNames::NAMES[@name] && StandardNames::NAMES[@name]["categories"]
       end
     end
   end

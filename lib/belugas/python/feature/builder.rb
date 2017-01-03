@@ -11,9 +11,9 @@ module Belugas
           {
             "type" => "feature",
             "name" => @requirement.standard_name,
-            "version" => @requirement.version,
+            "version" => "",
             "description" => "The application uses #{@requirement.standard_name}",
-            "categories" => ["Language"],
+            "categories" => @requirement.categories,
             "cue_locations" => [""]
           }
         end
