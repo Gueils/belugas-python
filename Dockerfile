@@ -9,8 +9,8 @@ RUN adduser -u 9000 -D app
 # 4: Copy just the Gemfile & Gemfile.lock, to avoid the build cache failing whenever any other
 # file changed and installing dependencies all over again - a must if your'e developing this
 # Dockerfile...
-ADD ./belugas-ruby.gemspec* /usr/src/app/
-ADD ./lib/belugas/ruby/version.rb /usr/src/app/lib/belugas/ruby/version.rb
+ADD ./belugas-python.gemspec* /usr/src/app/
+ADD ./lib/belugas/python/version.rb /usr/src/app/lib/belugas/python/version.rb
 ADD ./Gemfile* /usr/src/app/
 
 # 5: Install build + runtime dependencies, install/build the app gems, and remove build deps:
