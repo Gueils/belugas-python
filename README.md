@@ -1,41 +1,54 @@
-# Belugas::Python
+![belugas.png](belugas.png)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/belugas/python`. To experiment with that code, run `bin/console` for an interactive prompt.
+## Overview
 
-TODO: Delete this and the text above, and describe your gem
+`belugas-python` is a command line interface for the Belugas feature detection analysis
+platform. It allows you to run the python feature detector engine on your local machine inside of Docker containers.
+
+## Table of contents
+
+- [Prerquisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Supported Libraries](#supported-libraries)
+- [Contributing](#contributing)
+- [License](#license)
+
+
+## Prerequisites
+
+The Belugas Python CLI is distributed and run as a [Docker](https://www.docker.com) image. The engines that perform the actual analyses are also Docker images. To support this, you must have Docker [installed](https://docs.docker.com/engine/installation/) and running locally. We also require that the Docker daemon supports connections on the default Unix socket `/var/run/docker.sock`.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'belugas-python'
+```console
+docker pull icalialabs/belugas-python:latest
 ```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install belugas-python
 
 ## Usage
 
-TODO: Write usage instructions here
+**Before using belugas-python make sure you are on the project directory you want to analyze**
 
-## Development
+### 1: Standard (Non-development)
+```console
+docker run \
+  --interactive --tty --rm \
+  --volume "$PWD":/code \
+  icalialabs/belugas-python
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+The terminal will stream a json output for each of the features detected in the following format as specified at [belugas](https://github.com/IcaliaLabs/belugas/blob/master/documented-spec/spec/SPEC.md#features)
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+## Supported Libraries
+
+We currently only have support for a small set of libraries, you can easily find them at [https://github.com/IcaliaLabs/belugas-python/blob/master/lib/belugas/python/standard_names/base.rb](https://github.com/IcaliaLabs/belugas-python/blob/master/lib/belugas/python/standard_names/base.rb) and you can easily add them by placing a pull request.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/belugas-python. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Please submit all pull requests against a separate branch.
 
+Thanks!
 
-## License
+## Copyright
 
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
+See [LICENSE](LICENSE.txt)
