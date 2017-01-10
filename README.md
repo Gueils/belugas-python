@@ -1,4 +1,4 @@
-![belugas.png](belugas.png)
+![belugas-python.png](belugas-python.png)
 
 ## Overview
 
