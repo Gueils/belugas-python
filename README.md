@@ -1,5 +1,6 @@
-![belugas-python.png](belugas-python.png)
-
+<p align="center">
+  <img src="belugas-python.png" height="300px" alt="Belugas Python" />
+</p>
 ## Overview
 
 `belugas-python` is a command line interface for the Belugas feature detection analysis
