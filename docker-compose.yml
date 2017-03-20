@@ -5,8 +5,8 @@ volumes:
     driver: local
 
 services:
-  belugas:
-    image: icalialabs/datoz:development
+  belugas_python:
+    image: icalialabs/belugas-python:development
     build:
       context: .
       dockerfile: dev.Dockerfile
