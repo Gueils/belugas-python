@@ -1,3 +1,5 @@
+[![Code Climate](https://codeclimate.com/github/WhalesIL/belugas-python/badges/gpa.svg)](https://codeclimate.com/github/WhalesIL/belugas-python)
+
 <p align="center">
   <img src="belugas-python.png" height="300px" alt="Belugas Python" />
 </p>
