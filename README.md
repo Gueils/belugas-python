@@ -1,3 +1,6 @@
+[![Code Climate](https://codeclimate.com/github/WhalesIL/belugas-python/badges/gpa.svg)](https://codeclimate.com/github/WhalesIL/belugas-python)
+[![Build Status](https://travis-ci.org/WhalesIL/belugas-python.svg?branch=master)](https://travis-ci.org/WhalesIL/belugas-python)
+
 <p align="center">
   <img src="belugas-python.png" height="300px" alt="Belugas Python" />
 </p>
@@ -23,11 +26,11 @@ This engine works as command line interface on your local machine of a Docker co
 
 ## Why?
 
-`belugas-python` is part of the [Whales](https://github.com/IcaliaLabs/whales-cli) ecosystem: A set of tools to automatically dockerize your applications.
+`belugas-python` is part of the [Whales](https://github.com/WhalesIL/whales-cli) ecosystem: A set of tools to automatically dockerize your applications.
 
 ## What is a feature?
 
-A feature is an application attribute detected during the static analysis. This analysis is the act of derivating data from code such as programming language, frameworks, service dependencies and so on. See [here](#features-supported) for a list of attributes this engines currently supports.
+A feature is an application attribute detected during the static analysis. This analysis is the act of derivating data from code such as programming language, frameworks, service dependencies and so on. See [here](#supported-features) for a list of attributes this engines currently supports.
 
 A feature has the following format:
 
@@ -57,7 +60,7 @@ Where:
 
 ### Supported Features
 
-We currently only have support for a small set of libraries, you can easily find them [here](https://github.com/IcaliaLabs/belugas-python/blob/master/lib/belugas/python/standard_names/base.rb) and you can easily add them by placing a pull request.
+We currently only have support for a small set of libraries, you can easily find them [here](https://github.com/WhalesIL/belugas-python/blob/master/lib/belugas/python/standard_names/base.rb) and you can easily add them by placing a pull request.
 
 ## Installation
 
@@ -114,13 +117,13 @@ And voilá! The terminal will stream a json output for each of the features dete
 
 ## Contributing
 
-Everyone is freely to collaborate, just make sure you follow our [code of conduct](https://github.com/IcaliaLabs/belugas-python/blob/master/CODE_OF_CONDUCT.md). Thank you [contributors](https://github.com/IcaliaLabs/belugas-python/graphs/contributors)!
+Everyone is freely to collaborate, just make sure you follow our [code of conduct](https://github.com/WhalesIL/belugas-python/blob/master/CODE_OF_CONDUCT.md). Thank you [contributors](https://github.com/WhalesIL/belugas-python/graphs/contributors)!
 
 ### Create an Issue
 
-Find a bug and don't know how to fix it? Have trouble following the documentation or have a question about the project? Then by all means, please [create an issue](https://github.com/IcaliaLabs/belugas-python/issues/new).
+Find a bug and don't know how to fix it? Have trouble following the documentation or have a question about the project? Then by all means, please [create an issue](https://github.com/WhalesIL/belugas-python/issues/new).
 
-Just please make sure you check [existing issues](https://github.com/IcaliaLabs/belugas-python/issues) to see if what you're running into has been addressed already.
+Just please make sure you check [existing issues](https://github.com/WhalesIL/belugas-python/issues) to see if what you're running into has been addressed already.
 
 ### Submit a Pull Request
 
@@ -134,12 +137,12 @@ Once you've created a pull request, mainteners will chime in to review your prop
 
 ### I want to contribute but don't know where to start
 
-That's great also! We already have some [open issues](https://github.com/IcaliaLabs/belugas-python/issues) for you to dive in.
+That's great also! We already have some [open issues](https://github.com/WhalesIL/belugas-python/issues) for you to dive in.
 
 ## Copyright
 
-See [LICENSE](https://github.com/IcaliaLabs/belugas-python/blob/master/LICENSE.txt)
+See [LICENSE](https://github.com/WhalesIL/belugas-python/blob/master/LICENSE.txt)
 
-![Icalia Labs](https://raw.githubusercontent.com/IcaliaLabs/kaishi/master/logo.png)
+![Icalia Labs](https://raw.githubusercontent.com/icalialabs/kaishi/master/logo.png)
 
 Belugas-Python is maintained by [Icalia Labs](http://www.icalialabs.com/team)
