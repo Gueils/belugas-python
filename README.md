@@ -66,14 +66,14 @@ We currently only have support for a small set of libraries, you can easily find
 
 ### Prerequisites
 
-The Belugas Python CLI is distributed and run as a [Docker](https://hub.docker.com/r/icalialabs/belugas-python/) image, so you only need to have Docker [installed](https://docs.docker.com/engine/installation/) and running on your machine.
+The Belugas Python CLI is distributed and run as a [Docker](https://hub.docker.com/r/WhalesIL/belugas-python/) image, so you only need to have Docker [installed](https://docs.docker.com/engine/installation/) and running on your machine.
 
 ### Setup
 
 Fire up your terminal and run: 
 
 ```console
-docker pull icalialabs/belugas-python:latest
+docker pull WhalesIL/belugas-python:latest
 ```
 
 And that's it! 
