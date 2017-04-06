@@ -139,6 +139,21 @@ Once you've created a pull request, mainteners will chime in to review your prop
 
 That's great also! We already have some [open issues](https://github.com/WhalesIL/belugas-python/issues) for you to dive in.
 
+### Happy coding with docker!
+
+You can work as usual but if you are th kind of human being who loves to have everything organized and in place, docker development way is going to be your thing!
+
+First, please have docker installed in your machine. There plenty of flavors (Linux, Windows or MacOS).
+
+And that's it!
+
+```bash
+$ cd belugas-python
+$ docker-compose run belugas bash
+```
+
+And you are good to go. You can code like the usual.
+
 ## Copyright
 
 See [LICENSE](https://github.com/WhalesIL/belugas-python/blob/master/LICENSE.txt)
