@@ -1,5 +1,5 @@
-[![Code Climate](https://codeclimate.com/github/WhalesIL/belugas-python/badges/gpa.svg)](https://codeclimate.com/github/WhalesIL/belugas-python)
-[![Build Status](https://travis-ci.org/WhalesIL/belugas-python.svg?branch=master)](https://travis-ci.org/WhalesIL/belugas-python)
+[![Code Climate](https://codeclimate.com/github/Gueils/belugas-python/badges/gpa.svg)](https://codeclimate.com/github/Gueils/belugas-python)
+[![Test Coverage](https://codeclimate.com/github/Gueils/belugas-python/badges/coverage.svg)](https://codeclimate.com/github/Gueils/belugas-python/coverage)
 
 <p align="center">
   <img src="belugas-python.png" height="300px" alt="Belugas Python" />
