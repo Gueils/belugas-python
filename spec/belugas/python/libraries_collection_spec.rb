@@ -4,7 +4,7 @@ describe Belugas::Python::LibrariesCollection do
   before {
     @requirements = []
     @requirements << Belugas::Python::Requirement.new("faker", 0.0)
-    @requirements << Belugas::Python::Requirement.new("Django", 1.8)
+    @requirements << Belugas::Python::Requirement.new("django", 1.8)
   }
 
   subject { Belugas::Python::LibrariesCollection.new(@requirements) }

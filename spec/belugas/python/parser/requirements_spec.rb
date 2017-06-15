@@ -21,6 +21,14 @@ describe Belugas::Python::Parser::Requirements do
     end
   end
 
+  context "Requirements without version" do
+    it "returns the requirement with version 0" do
+      requirements_without_version = Belugas::Python::Parser::Requirements.new("spec/support/requirements_without_version.txt")
+      expect(requirements_without_version.requirements.first.name).to eq "flask"
+      expect(requirements_without_version.requirements.first.version).to eq 0
+    end
+  end
+
   context "requirements is empty" do
     failed_subject = Belugas::Python::Parser::Requirements.new("spec/support/empty_requirements.txt")
 

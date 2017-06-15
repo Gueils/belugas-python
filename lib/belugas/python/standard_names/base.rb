@@ -6,6 +6,10 @@ module Belugas
           "standard_name" => "django",
           "categories" => ["Framework"]
         },
+        "flask" => {
+          "standard_name" => "flask",
+          "categories" => ["Framework"]
+        },
         "django-postgrespool" => {
           "standard_name" => "postgresql",
           "categories" => ["Database"]
