@@ -13,7 +13,7 @@ module Belugas
         "django-postgrespool" => {
           "standard_name" => "postgresql",
           "categories" => ["Database"]
-        },
+        }
       }
     end
   end
