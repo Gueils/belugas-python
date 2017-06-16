@@ -13,7 +13,7 @@ module Belugas
         def requirements
           @requirements ||= [].tap do |deps|
             requirements_matches.each do |match|
-              deps << Belugas::Python::Requirement.new(match[:name], match[:version])
+              deps << Belugas::Python::Requirement.new(match[:name].downcase, match[:version] || 0) unless match[:name].empty? 
             end
           end
         end
