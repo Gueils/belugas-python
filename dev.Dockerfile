@@ -1,10 +1,26 @@
-FROM ruby:2.4
+# 1: Use ruby 2.3.3 as base:
+FROM ruby:2.3.3
 
-RUN mkdir -p /usr/src/app
+# 3: We'll add the app's binaries path to $PATH, and set the environment name to 'production':
+ENV PATH=/usr/src/app/bin:$PATH
+
+
+# 4: Copy just the Gemfile & Gemfile.lock, to avoid the build cache failing whenever any other
+# file changed and installing dependencies all over again - a must if your'e developing this
+# Dockerfile...
+ADD ./belugas-python.gemspec* /usr/src/app/
+ADD ./lib/belugas/python/version.rb /usr/src/app/lib/belugas/python/version.rb
 ADD ./Gemfile* /usr/src/app/
+
+# 5: Install build + runtime dependencies, install/build the app gems, and remove build deps:
+RUN set -ex \
+    && cd /usr/src/app \
+    && bundle install
+
+# 6: Copy the rest of the application code, then change the owner of the code to 'app':
 ADD . /usr/src/app
-WORKDIR /usr/src/app
 
-RUN gem install bundler --no-ri --no-rdoc
+VOLUME /code
+WORKDIR /code
 
-RUN bundle
+CMD ["/usr/src/app/bin/belugas-python", "analyze"]

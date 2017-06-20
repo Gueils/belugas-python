@@ -2,10 +2,12 @@
 /.yardoc
 /Gemfile.lock
 /_yardoc/
-/coverage/
 /doc/
 /pkg/
 /spec/reports/
 /tmp/
 *.swp
 *.swo
+
+# Include coverage report from Simplecov
+/coverage
