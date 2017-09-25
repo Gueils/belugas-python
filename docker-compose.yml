@@ -6,7 +6,7 @@ volumes:
 
 services:
   belugas_python:
-    image: icalialabs/belugas-python:development
+    image: gueils/belugas-python:development
     build:
       context: .
       dockerfile: dev.Dockerfile
