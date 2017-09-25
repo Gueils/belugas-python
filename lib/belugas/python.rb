@@ -1,6 +1,7 @@
 require "thor"
 require "json"
 require 'belugas/python/dispatcher'
+require 'rescuer'
 
 module Belugas
   module Python
@@ -10,8 +11,15 @@ module Belugas
       desc "analyze --requirements-path=/app/code", "Python feature detection JSON"
       method_option "requirements-path", type: :string, default: "/code/requirements.txt", required: false, aliases: "-p"
       def analyze
-        dispatcher = Belugas::Python::Dispatcher.new(options["requirements-path"])
-        dispatcher.render
+        rescuer = Rescuer.new
+
+        begin
+          dispatcher = Belugas::Python::Dispatcher.new(options["requirements-path"])
+          dispatcher.render
+        rescue Exception => e
+          rescuer.ping e
+          raise e
+        end
       end
     end
   end
