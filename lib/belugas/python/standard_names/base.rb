@@ -2,35 +2,28 @@ module Belugas
   module Python
     module StandardNames
       NAMES = {
-        'django' => {
-          'standard_name' => 'django',
+        'django' => { 'standard_name' => 'django',
           'categories' => ['Framework']
         },
-        'flask' => {
-          'standard_name' => 'flask',
+        'flask' => { 'standard_name' => 'flask',
           'categories' => ['Framework']
         },
-        'django-postgrespool' => {
-          'standard_name' => 'postgresql',
+        'django-postgrespool' => { 'standard_name' => 'postgresql',
           'categories' => ['Database']
         },
-        'psycopg2' => {
-          'standard_name' => 'postgresql',
+        'psycopg2' => { 'standard_name' => 'postgresql',
           'categories' => ['Database'],
           'version' => '9'
         },
-        'mysql-python' => {
-          'standard_name' => 'mysql',
+        'mysql-python' => { 'standard_name' => 'mysql',
           'categories' => ['Database'],
           'version' => '5'
         },
-         'mysqlclient' => {
-           'standard_name' => 'mysql',
+         'mysqlclient' => { 'standard_name' => 'mysql',
            'categories' => ['Database'],
            'version' => '5'
          },
-           'celery' => {
-             'standard_name' => 'celery',
+           'celery' => { 'standard_name' => 'celery',
              'categories' => ['Service'],
              'version' => '4.1'
         }
