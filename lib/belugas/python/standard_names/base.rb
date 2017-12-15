@@ -28,7 +28,12 @@ module Belugas
            "standard_name" => "mysql",
            "categories" => ["Database"],
            "version" => "5"
-         }
+         },
+           "celery" => {
+             "standard_name" => "celery",
+             "categories" => ["Service"],
+             "version" => "4.1"
+        }
       }
     end
   end
