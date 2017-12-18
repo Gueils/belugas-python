@@ -1,4 +1,3 @@
-# require 'pry'
 module Belugas
   module Python
     module StandardNames
@@ -8,7 +7,6 @@ module Belugas
         end
 
         def standard_name
-          # binding.pry
           feature_name['standard_name']
         end
 

@@ -25,7 +25,7 @@ module Belugas
       def dependencies
         @dependencies ||= Belugas::Python::LibrariesCollection
                           .new(@requirements.requirements)
-                          .dependencies                  
+                          .dependencies
       end
 
       def features
