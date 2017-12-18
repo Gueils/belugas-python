@@ -15,5 +15,6 @@ services:
     volumes:
       - .:/usr/src/app
       - gems:/usr/local/bundle
+      - /home/eduardo/Documentos/REPOS/django-postgres-copy:/code
     stdin_open: true
     tty: true

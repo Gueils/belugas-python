@@ -8,8 +8,11 @@ module Belugas
     class Sonar < Thor
       package_name 'belugas-ruby'
 
-      desc 'analyze --requirements-path=/app/code', 'Python feature detection JSON'
-      method_option 'requirements-path', type: :string, default: '/code/', required: false, aliases: '-p'
+      desc 'analyze --requirements-path=/app/code',
+           'Python feature detection JSON'
+      method_option 'requirements-path',
+                    type: :string, default: '/code/',
+                    required: false, aliases: '-p'
       def analyze
         rescuer = Rescuer.new
 

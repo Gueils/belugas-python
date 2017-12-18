@@ -1,7 +1,9 @@
 require 'belugas/python/parser/requirements'
 require 'belugas/python/feature/builder'
+require 'belugas/python/standard_names/standar_name_handler'
 require 'belugas/python/standard_names/base'
 require 'belugas/python/libraries_collection'
+require 'pry'
 
 module Belugas
   module Python
@@ -23,7 +25,7 @@ module Belugas
       def dependencies
         @dependencies ||= Belugas::Python::LibrariesCollection
                           .new(@requirements.requirements)
-                          .dependencies
+                          .dependencies                  
       end
 
       def features
