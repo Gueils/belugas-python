@@ -14,9 +14,11 @@ module Belugas
 
       def requirements
         @requirements.map do |requirement|
-          requirement_name = StandardNames::NAMES[requirement.name] #=> {standard_name: "", categories: []}
-          if requirement_name && requirement_name["standard_name"]
-            requirement.update requirement_name["standard_name"]
+          standard_name = StandardNames::StandardNamesHandler.new(requirement.name)
+          if standard_name.exist?
+            requirement.update standard_name.standard_name
+            requirement.update_version standard_name.version if requirement.version == 0 && standard_name.version?
+            requirement
           end
         end.compact
       end

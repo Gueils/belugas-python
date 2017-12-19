@@ -13,6 +13,11 @@ module Belugas
         self
       end
 
+      def update_version(new_version)
+        @version = new_version
+        self
+      end
+
       def categories
         StandardNames::NAMES[@name] && StandardNames::NAMES[@name]["categories"]
       end
