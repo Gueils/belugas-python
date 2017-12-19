@@ -3,7 +3,6 @@ require 'belugas/python/feature/builder'
 require 'belugas/python/standard_names/standar_name_handler'
 require 'belugas/python/standard_names/base'
 require 'belugas/python/libraries_collection'
-require 'pry'
 
 module Belugas
   module Python
