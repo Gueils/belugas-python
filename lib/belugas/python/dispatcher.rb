@@ -1,6 +1,7 @@
 require 'belugas/python/parser/requirements'
 require 'belugas/python/feature/builder'
 require 'belugas/python/standard_names/standar_name_handler'
+require 'belugas/python/standard_names/requirement_handler'
 require 'belugas/python/standard_names/base'
 require 'belugas/python/libraries_collection'
 
@@ -28,7 +29,7 @@ module Belugas
       end
 
       def features
-        @features ||= dependencies.map do |dependency|
+        @features ||= dependencies.values.map do |dependency|
           Belugas::Python::Feature::Builder.new(dependency).attributes
         end << python_feature
       end

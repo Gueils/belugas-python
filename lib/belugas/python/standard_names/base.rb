@@ -5,8 +5,8 @@ module Belugas
         'django' => {
           'standard_name' => 'django',
           'categories' => ['Framework'],
-          'version' => '1.9',
-          'short_version' => /\d\.\d/
+          'default_version' => '1.9',
+          'short_version' => /\d\.\d/,
         },
         'flask' => {
           'standard_name' => 'flask',
@@ -14,27 +14,28 @@ module Belugas
         },
         'django-postgrespool' => {
           'standard_name' => 'postgresql',
-          'categories' => ['Database']
+          'categories' => ['Database'],
+          'feature_version' => '9.0'
         },
         'psycopg2' => {
           'standard_name' => 'postgresql',
           'categories' => ['Database'],
-          'version' => '9'
+          'feature_version' => '9.0'          
         },
         'mysql-python' => {
           'standard_name' => 'mysql',
           'categories' => ['Database'],
-          'version' => '5'
+          'feature_version' => '5'
         },
         'mysqlclient' => {
           'standard_name' => 'mysql',
           'categories' => ['Database'],
-          'version' => '5'
+          'feature_version' => '5'
         },
         'celery' => {
           'standard_name' => 'celery',
           'categories' => ['Service'],
-          'version' => '4.1'
+          'default_version' => '4.1'
         }
       }.freeze
     end
