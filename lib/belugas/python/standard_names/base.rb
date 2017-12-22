@@ -5,7 +5,8 @@ module Belugas
         'django' => {
           'standard_name' => 'django',
           'categories' => ['Framework'],
-          'version' => '1.9'
+          'version' => '1.9',
+          'short_version' => /\d\.\d/
         },
         'flask' => {
           'standard_name' => 'flask',

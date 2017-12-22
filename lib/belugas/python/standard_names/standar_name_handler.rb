@@ -14,12 +14,20 @@ module Belugas
           feature_name['version']
         end
 
+        def short_version
+          feature_name['short_version']
+        end
+
         def exist?
           StandardNames::NAMES.key? @name
         end
 
         def version?
           feature_name.key? 'version'
+        end
+
+        def short_version?
+          feature_name.key? 'short_version'
         end
 
         private
