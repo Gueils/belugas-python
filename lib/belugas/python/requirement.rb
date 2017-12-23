@@ -19,7 +19,7 @@ module Belugas
       end
 
       def categories
-        StandardNames::NAMES[@name] && StandardNames::NAMES[@name]["categories"]
+        StandardNames::NAMES[@name] && StandardNames::NAMES[@name]['categories']
       end
     end
   end

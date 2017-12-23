@@ -2,7 +2,7 @@ module Belugas
   module Python
     module Feature
       class Builder
-
+        
         def initialize(requirement)
           @requirement = requirement
         end

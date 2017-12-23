@@ -17,7 +17,8 @@ module Belugas
         rescuer = Rescuer.new
 
         begin
-          dispatcher = Belugas::Python::Dispatcher.new(options['requirements-path'])
+          dispatcher = Belugas::Python::Dispatcher
+                       .new(options['requirements-path'])
           dispatcher.render
         rescue Exception => e
           rescuer.ping e

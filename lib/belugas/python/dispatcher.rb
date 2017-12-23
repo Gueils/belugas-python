@@ -8,7 +8,7 @@ require 'belugas/python/libraries_collection'
 module Belugas
   module Python
     class Dispatcher
-
+      
       def initialize(path)
         @requirements = Belugas::Python::Parser::Requirements.new(path)
       end
@@ -35,12 +35,12 @@ module Belugas
       end
 
       def python_feature
-       @python_feature ||= {
-         'type' => 'feature',
-         'name' => 'Python',
-         'version' => '2.7',
-         'description' => 'The application uses Python code',
-         'categories' => ['Language']
+        @python_feature ||= {
+          'type' => 'feature',
+          'name' => 'Python',
+          'version' => '2.7',
+          'description' => 'The application uses Python code',
+          'categories' => ['Language']
         }
       end
     end
