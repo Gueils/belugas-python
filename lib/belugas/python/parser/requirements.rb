@@ -29,7 +29,7 @@ module Belugas
         end
 
         def matches(pattern)
-          [].tap { |m| content.scan(pattern){ m << Regexp.last_match }}
+          [].tap { |m| content.scan(pattern) { m << Regexp.last_match } }
         end
 
         def content

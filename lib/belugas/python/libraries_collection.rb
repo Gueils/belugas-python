@@ -20,8 +20,8 @@ module Belugas
                           .new(requirement.name)
           next unless standard_name.exist?
           @features[standard_name.standard_name] = StandardNames::RequirementHandler
-                                                  .new(requirement, standard_name)
-                                                  .requirement
+                                                   .new(requirement, standard_name)
+                                                   .requirement
         end.compact
       end
     end

@@ -20,7 +20,7 @@ module Belugas
         'psycopg2' => {
           'standard_name' => 'postgresql',
           'categories' => ['Database'],
-          'feature_version' => '9.0'          
+          'feature_version' => '9.0'
         },
         'mysql-python' => {
           'standard_name' => 'mysql',
