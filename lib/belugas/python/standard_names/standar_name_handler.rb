@@ -10,16 +10,32 @@ module Belugas
           feature_name['standard_name']
         end
 
-        def version
-          feature_name['version']
+        def default_version
+          feature_name['default_version']
+        end
+
+        def feature_version
+          feature_name['feature_version']
+        end
+
+        def short_version
+          feature_name['short_version']
         end
 
         def exist?
           StandardNames::NAMES.key? @name
         end
 
-        def version?
-          feature_name.key? 'version'
+        def default_version?
+          feature_name.key? 'default_version'
+        end
+
+        def feature_version?
+          feature_name.key? 'feature_version'
+        end
+
+        def short_version?
+          feature_name.key? 'short_version'
         end
 
         private
