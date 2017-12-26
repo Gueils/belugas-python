@@ -25,7 +25,7 @@ module Belugas
         'mysql-python' => {
           'standard_name' => 'mysql',
           'categories' => ['Database'],
-          'feature_version' => '5'
+          'feature_version' => '5.5'
         },
         'mysqlclient' => {
           'standard_name' => 'mysql',
